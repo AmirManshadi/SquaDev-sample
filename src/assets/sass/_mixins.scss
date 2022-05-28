@@ -1,0 +1,11 @@
+@mixin flex($pos-x: center, $pos-y: center, $dir: row, $wrap: 'no-wrap') {
+    display: flex;
+    justify-content: $pos-x;
+    align-items: $pos-y;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin transition($prop: all, $time: 1s, $func: ease) {
+    transition: $prop $time $func;
+}
