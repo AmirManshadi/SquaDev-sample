@@ -17,16 +17,20 @@ body {
         height: 50px;
         // background-color: #002;
         @include flex(space-between, center);
+
         .main-nav {
             flex: 60%;
             @include flex(start);
 
             li {
-                    @include margin-padding(0, 0, 0, 20px);
+                @include margin-padding(0, 0, 0, 20px);
+
                 a {
                     // background-color: #555;
                     position: relative;
+
                     &::before {
+                        content: '';
                         position: absolute;
                         bottom: -2px;
                         width: 0;
@@ -36,8 +40,10 @@ body {
                     }
 
                     @include transition(color, .3s);
+
                     &:hover {
                         color: $primary-color;
+
                         &::before {
                             width: 100%;
                         }
@@ -45,16 +51,19 @@ body {
                 }
             }
         }
+
         .social-nav {
             flex: 40%;
             @include flex(end);
-            
+
             li {
                 @include margin-padding(0, 10px, 0, 0);
+
                 a {
                     @include margin-padding(2px, 2px, 2px, 2px, false);
 
                     @include transition(color, .2s);
+
                     &:hover {
                         color: $primary-color;
                     }
@@ -69,15 +78,80 @@ body {
 #hero {
     div.row {
         @include flex(space-between, center, null, null);
+
         .right-side {
             flex: 45%;
             width: 45%;
+            position: relative;
+
+            .gear-1 {
+                @include position-abs(50%, 5%);
+                font-size: $font-size * 2;
+                color: $primary-color;
+                animation: gear-1 10s infinite linear;
+            }
+
+            @keyframes gear-1 {
+                100% {
+                    transform: rotate(-360deg)
+                }
+            }
+
+            .gear-2 {
+                @include position-abs(50%, 2%);
+                font-size: $font-size * 1.2;
+                color: $secondary-color;
+                animation: gear-2 10s infinite linear;
+            }
+
+            @keyframes gear-2 {
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+
+            .star-1 {
+                @include position-abs(null, null, 30%, 10%);
+                font-size: $font-size * 1.5;
+                color: $primary-color;
+                animation: star-1 10s infinite linear;
+            }
+
+            @keyframes star-1 {
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+
+            .star-2 {
+                @include position-abs(null, 20%, 20%, null);
+                font-size: $font-size * 2.2;
+                color: $secondary-color;
+                animation: star-2 12s infinite linear;
+            }
+
+            @keyframes star-2 {
+                100% {
+                    transform: rotate(-360deg)
+                }
+            }
         }
+
         .left-side {
             flex: 45%;
             width: 45%;
-            
+
+            h1 {
+                font: {
+                    size: $font-size * 2;
+                }
+            }
+
             p {
+                font: {
+                    size: $font-size * 1.2;
+                }
+
                 margin-top: 20px;
                 line-height: 1.6;
             }
