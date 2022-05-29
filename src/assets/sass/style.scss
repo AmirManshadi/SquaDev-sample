@@ -1,6 +1,63 @@
-@import "variables"; 
+// importing modules
+@import "variables";
 @import "mixins";
 @import "font";
 @import "utilities";
 @import "reset";
 
+// public style
+body {
+    background-color: $bg-color;
+}
+
+// Top Menu
+#top-menu {
+    .navbar {
+        height: 50px;
+        // background-color: #002;
+        @include flex(space-between, center);
+        .main-nav {
+            flex: 60%;
+            @include flex(space-evenly);
+
+            li {
+                a {
+                    // background-color: #555;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        bottom: -2px;
+                        width: 0;
+                        height: 2px;
+                        background-color: $primary-color;
+                        @include transition(width, .5s)
+                    }
+
+                    @include transition(color, .3s);
+                    &:hover {
+                        color: $primary-color;
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .social-nav {
+            flex: 40%;
+            @include flex();
+            
+            li {
+                @include margin-padding(0, 10px, 0, 0);
+                a {
+                    @include margin-padding(2px, 2px, 2px, 2px, false);
+
+                    @include transition(color, .2s);
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
