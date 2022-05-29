@@ -9,3 +9,13 @@
 @mixin transition($prop: all, $time: 1s, $func: ease) {
     transition: $prop $time $func;
 }
+
+@mixin margin-padding($t, $r, $b, $l, $margin: true) {
+    @if ($margin) {
+        margin: $t $r $b $l;
+    }
+
+    @else {
+        padding: $t $r $b $l;
+    }
+}
