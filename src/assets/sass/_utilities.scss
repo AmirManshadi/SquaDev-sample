@@ -10,5 +10,6 @@
 }
 
 .row {
-    @include flex(center, null, row, wrap);
+    width: 100%;
+    @include flex(null, null, row, wrap);
 }
