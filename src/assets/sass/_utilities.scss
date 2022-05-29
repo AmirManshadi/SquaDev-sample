@@ -3,3 +3,12 @@
     width: 100%;
     height: auto;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    @include flex(center, null, row, wrap);
+}
