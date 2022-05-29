@@ -19,9 +19,10 @@ body {
         @include flex(space-between, center);
         .main-nav {
             flex: 60%;
-            @include flex(space-evenly);
+            @include flex(start);
 
             li {
+                    @include margin-padding(0, 0, 0, 20px);
                 a {
                     // background-color: #555;
                     position: relative;
@@ -31,7 +32,7 @@ body {
                         width: 0;
                         height: 2px;
                         background-color: $primary-color;
-                        @include transition(width, .5s)
+                        @include transition(width, .5s);
                     }
 
                     @include transition(color, .3s);
@@ -46,7 +47,7 @@ body {
         }
         .social-nav {
             flex: 40%;
-            @include flex();
+            @include flex(end);
             
             li {
                 @include margin-padding(0, 10px, 0, 0);
@@ -58,6 +59,27 @@ body {
                         color: $primary-color;
                     }
                 }
+            }
+        }
+    }
+}
+
+// header
+
+#hero {
+    div.row {
+        @include flex(space-between, center, null, null);
+        .right-side {
+            flex: 45%;
+            width: 45%;
+        }
+        .left-side {
+            flex: 45%;
+            width: 45%;
+            
+            p {
+                margin-top: 20px;
+                line-height: 1.6;
             }
         }
     }

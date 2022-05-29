@@ -102,9 +102,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -114,6 +114,10 @@ body {
           flex-direction: row;
   -ms-flex-wrap: "no-wrap";
       flex-wrap: "no-wrap";
+}
+
+#top-menu .navbar .main-nav li {
+  margin: 0 0 0 20px;
 }
 
 #top-menu .navbar .main-nav li a {
@@ -147,9 +151,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -173,5 +177,36 @@ body {
 
 #top-menu .navbar .social-nav li a:hover {
   color: #594A93;
+}
+
+#hero div.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero div.row .right-side {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  width: 45%;
+}
+
+#hero div.row .left-side {
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  width: 45%;
+}
+
+#hero div.row .left-side p {
+  margin-top: 20px;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=style.css.map */
