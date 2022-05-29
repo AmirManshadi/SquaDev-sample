@@ -19,3 +19,11 @@
         padding: $t $r $b $l;
     }
 }
+
+@mixin position-abs($t:null,$r:null,$b:null,$l:null) {
+    position: absolute;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
