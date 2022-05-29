@@ -47,7 +47,7 @@ body {
   font-family: "yekan";
   font-weight: "normal";
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul,
@@ -73,6 +73,7 @@ input {
 
 body {
   background-color: #F7EBFF;
+  color: #282828;
 }
 
 #top-menu .navbar {
