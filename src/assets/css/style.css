@@ -14,6 +14,7 @@
   display: block;
   width: 100%;
   height: auto;
+  border-radius: inherit;
 }
 
 .container {
@@ -166,7 +167,7 @@ body {
 }
 
 #top-menu .navbar .social-nav li a {
-  padding: 2px 2px 2px 2px;
+  padding: 2px;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
@@ -304,8 +305,137 @@ body {
 
 #hero div.row .left-side p {
   font-size: 19.2px;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   line-height: 1.6;
+}
+
+#courses {
+  margin-top: 100px;
+  position: relative;
+}
+
+#courses .pipe {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  height: 300px;
+  width: 1400px;
+  background-color: #00C89F;
+  opacity: .4;
+  border-radius: 0 200px 200px 0;
+  z-index: -10;
+}
+
+#courses .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#courses .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  margin: 0 20px;
+  background-color: #594A93;
+  color: #ebebeb;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#courses .cards .card .course-img-wrapper {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  background-color: #594A93;
+  padding: 2px;
+}
+
+#courses .cards .card .course-img-wrapper .status {
+  font-size: 12px;
+  background-color: #594A93;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+#courses .cards .card .desc {
+  padding: 10px;
+}
+
+#courses .cards .card .desc .title {
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #faf3ff;
+}
+
+#courses .cards .card .desc .meta {
+  padding: 10px 0 0 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+#courses .cards .card .desc .meta i {
+  margin: 0 5px;
+}
+
+#courses .cards .card .teacher {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  width: 50px;
+  color: #282828;
+  font-size: 12px;
+  z-index: -2;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#courses .cards .card .teacher .teacher-name {
+  position: absolute;
+  width: 0;
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  white-space: nowrap;
+}
+
+#courses .cards .card:hover {
+  -webkit-box-shadow: 5px 10px 10px #333a;
+  box-shadow: 5px 10px 10px #333a;
+  -webkit-transform: translate(-5px, -10px);
+  transform: translate(-5px, -10px);
+}
+
+#courses .cards .card:hover .teacher {
+  top: -40px;
+}
+
+#courses .cards .card:hover .teacher .teacher-name {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: translate(-55px, -35px);
+  transform: translate(-55px, -35px);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,17 +10,7 @@
     transition: $prop $time $func;
 }
 
-@mixin margin-padding($t, $r, $b, $l, $margin: true) {
-    @if ($margin) {
-        margin: $t $r $b $l;
-    }
-
-    @else {
-        padding: $t $r $b $l;
-    }
-}
-
-@mixin position-abs($t:null,$r:null,$b:null,$l:null) {
+@mixin position-abs($t:null, $r:null, $b:null, $l:null) {
     position: absolute;
     top: $t;
     right: $r;
