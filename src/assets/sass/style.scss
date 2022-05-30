@@ -23,7 +23,7 @@ body {
             @include flex(start);
 
             li {
-                @include margin-padding(0, 0, 0, 20px);
+                margin: 0 0 0 20px;
 
                 a {
                     // background-color: #555;
@@ -57,10 +57,10 @@ body {
             @include flex(end);
 
             li {
-                @include margin-padding(0, 10px, 0, 0);
+                margin: 0 10px 0 0;
 
                 a {
-                    @include margin-padding(2px, 2px, 2px, 2px, false);
+                    padding: 2px;
 
                     @include transition(color, .2s);
 
@@ -152,8 +152,117 @@ body {
                     size: $font-size * 1.2;
                 }
 
-                margin-top: 20px;
+                margin: 20px 0 0 0;
                 line-height: 1.6;
+            }
+        }
+    }
+}
+
+// courses
+
+#courses {
+    margin-top: 100px;
+    position: relative;
+
+    .pipe {
+        @include position-abs(50px, null, null, -180px);
+        height: 300px;
+        width: 1400px;
+        background-color: $secondary-color;
+        opacity: .4;
+        border-radius: 0 200px 200px 0;
+        z-index: -10;
+    }
+
+    .cards {
+        @include flex(center, center, null, null);
+
+        .card {
+            @include flex(null, null, column, no-wrap);
+            flex-basis: 25%;
+            margin: 0 20px;
+            background-color: $primary-color;
+            color: $text-white;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            @include transition(all, .3s, ease);
+
+            .course-img-wrapper {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+                overflow: hidden;
+                background-color: $primary-color;
+                padding: 2px;
+
+                .status {
+                    font: {
+                        size: 12px;
+                    }
+
+                    background-color: $primary-color;
+                    @include position-abs(10px, null, null, 10px);
+                    padding: 2px 5px;
+                    border-radius: 10px;
+                }
+            }
+
+            .desc {
+                padding: 10px;
+
+                .title {
+                    padding: 0 0 5px 0;
+                    border-bottom: 1px solid $bg-color;
+                }
+
+                .meta {
+                    padding: 10px 0 0 0;
+                    text-align: left;
+
+                    font: {
+                        size: 12px;
+                    }
+
+                    i {
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+            .teacher {
+                @include position-abs(-15px, 10px, null, null);
+                width: 50px;
+                color: $text-black;
+
+                font: {
+                    size: 12px;
+                }
+
+                z-index: -2;
+                @include transition(all, .4s, ease);
+
+                .teacher-name {
+                    @include position-abs();
+                    width: 0;
+                    transform: translate(0, -35px);
+                    @include transition(all, .4s, ease);
+                    white-space: nowrap;
+                }
+            }
+
+            &:hover {
+                box-shadow: 5px 10px 10px #333a;
+                transform: translate(-5px, -10px);
+
+                .teacher {
+                    top: -40px;
+
+                    .teacher-name {
+                        width: max-content;
+                        transform: translate(-55px, -35px);
+                    }
+                }
             }
         }
     }
