@@ -727,4 +727,35 @@ body {
   padding: 20px 0;
   background-color: #3d3365;
 }
+
+#scroll-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: "no-wrap";
+      flex-wrap: "no-wrap";
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #00C89F;
+  color: #282828;
+  z-index: 100;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
 /*# sourceMappingURL=style.css.map */
