@@ -293,3 +293,99 @@ body {
         }
     }
 }
+
+// topics 
+
+#topics {
+    h3 {
+        padding: 0 20px;
+        border-right: 4px solid $secondary-color;
+        margin: 20px 0;
+    }
+
+    .topic {
+        justify-content: space-between;
+        margin: 10px 0;
+
+        .card {
+            @include flex();
+            flex-basis: 49.5%;
+            width: 49.5%;
+            background-color: $primary-color;
+            color: $text-white;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 1px 1px 5px #333a;
+
+            .img-wrapper {
+                flex-basis: 30%;
+                width: 30%;
+                border-radius: 10px;
+                filter: grayscale(1);
+                @include transition(filter, .3s);
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            &:hover {
+                .img-wrapper {
+                    filter: grayscale(0);
+                }
+            }
+
+            .desc {
+                flex-basis: 70%;
+                width: 70%;
+                padding: 0 20px;
+
+                &::before {
+                    content: '';
+                    @include position-abs(0, 160px, 0, 0);
+                    transform: skewX(-5deg);
+                    height: 100%;
+                    width: 25px;
+                    background-color: $primary-color;
+                }
+
+                .title {
+                    @include transition(color, .3s);
+
+                    font: {
+                        size: $font-size - 2px;
+                    }
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+
+                .details {
+                    padding: 5px;
+
+                    .meta {
+                        font: {
+                            size: $font-size - 6px;
+                        }
+
+                        i {
+                            margin: 0 0 0 5px;
+                        }
+                    }
+
+                    .summary {
+                        color: $text-fade;
+                        padding: 5px 0;
+
+                        font: {
+                            size: $font-size - 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
