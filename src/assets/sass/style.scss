@@ -162,7 +162,6 @@ body {
 // courses
 
 #courses {
-    margin-top: 100px;
     position: relative;
 
     .pipe {
@@ -263,6 +262,33 @@ body {
                         transform: translate(-55px, -35px);
                     }
                 }
+            }
+        }
+    }
+}
+
+// study path
+
+#path {
+    .row {
+        @include flex(space-between, center, row, null);
+
+        .img-side {
+            flex-basis: 47.5%;
+            width: 47.5%;
+        }
+
+        .desc-side {
+            flex-basis: 47.5%;
+            width: 47.5%;
+            color: $text-black;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            p {
+                line-height: 1.6;
             }
         }
     }
