@@ -30,4 +30,7 @@ a {
 button,
 input {
     outline: none;
+    font: {
+        family: inherit;
+    }
 }
