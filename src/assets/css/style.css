@@ -29,10 +29,10 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mt-1 {
@@ -44,7 +44,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -82,38 +82,38 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: "no-wrap";
-  flex-wrap: "no-wrap";
+      flex-wrap: "no-wrap";
 }
 
 #top-menu .navbar .main-nav {
   -webkit-box-flex: 60%;
-  -ms-flex: 60%;
-  flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: "no-wrap";
-  flex-wrap: "no-wrap";
+      flex-wrap: "no-wrap";
 }
 
 #top-menu .navbar .main-nav li {
@@ -147,23 +147,23 @@ body {
 
 #top-menu .navbar .social-nav {
   -webkit-box-flex: 40%;
-  -ms-flex: 40%;
-  flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: "no-wrap";
-  flex-wrap: "no-wrap";
+      flex-wrap: "no-wrap";
 }
 
 #top-menu .navbar .social-nav li {
@@ -185,17 +185,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #hero div.row .right-side {
   -webkit-box-flex: 45%;
-  -ms-flex: 45%;
-  flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
   width: 45%;
   position: relative;
 }
@@ -207,20 +207,20 @@ body {
   font-size: 32px;
   color: #594A93;
   -webkit-animation: gear-1 10s infinite linear;
-  animation: gear-1 10s infinite linear;
+          animation: gear-1 10s infinite linear;
 }
 
 @-webkit-keyframes gear-1 {
   100% {
     -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
 @keyframes gear-1 {
   100% {
     -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
@@ -231,20 +231,20 @@ body {
   font-size: 19.2px;
   color: #00C89F;
   -webkit-animation: gear-2 10s infinite linear;
-  animation: gear-2 10s infinite linear;
+          animation: gear-2 10s infinite linear;
 }
 
 @-webkit-keyframes gear-2 {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes gear-2 {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -255,20 +255,20 @@ body {
   font-size: 24px;
   color: #594A93;
   -webkit-animation: star-1 10s infinite linear;
-  animation: star-1 10s infinite linear;
+          animation: star-1 10s infinite linear;
 }
 
 @-webkit-keyframes star-1 {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes star-1 {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -279,27 +279,27 @@ body {
   font-size: 35.2px;
   color: #00C89F;
   -webkit-animation: star-2 12s infinite linear;
-  animation: star-2 12s infinite linear;
+          animation: star-2 12s infinite linear;
 }
 
 @-webkit-keyframes star-2 {
   100% {
     -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
 @keyframes star-2 {
   100% {
     -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
 #hero div.row .left-side {
   -webkit-box-flex: 45%;
-  -ms-flex: 45%;
-  flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
   width: 45%;
 }
 
@@ -334,11 +334,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #courses .cards .card {
@@ -347,12 +347,12 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: no-wrap;
-  flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
   -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
+      flex-basis: 25%;
   margin: 0 20px;
   background-color: #594A93;
   color: #ebebeb;
@@ -416,7 +416,7 @@ body {
   position: absolute;
   width: 0;
   -webkit-transform: translate(0, -35px);
-  transform: translate(0, -35px);
+          transform: translate(0, -35px);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   white-space: nowrap;
@@ -424,9 +424,9 @@ body {
 
 #courses .cards .card:hover {
   -webkit-box-shadow: 5px 10px 10px #333a;
-  box-shadow: 5px 10px 10px #333a;
+          box-shadow: 5px 10px 10px #333a;
   -webkit-transform: translate(-5px, -10px);
-  transform: translate(-5px, -10px);
+          transform: translate(-5px, -10px);
 }
 
 #courses .cards .card:hover .teacher {
@@ -438,7 +438,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   -webkit-transform: translate(-55px, -35px);
-  transform: translate(-55px, -35px);
+          transform: translate(-55px, -35px);
 }
 
 #path .row {
@@ -446,26 +446,26 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #path .row .img-side {
   -ms-flex-preferred-size: 47.5%;
-  flex-basis: 47.5%;
+      flex-basis: 47.5%;
   width: 47.5%;
 }
 
 #path .row .desc-side {
   -ms-flex-preferred-size: 47.5%;
-  flex-basis: 47.5%;
+      flex-basis: 47.5%;
   width: 47.5%;
   color: #282828;
 }
@@ -477,5 +477,4 @@ body {
 #path .row .desc-side p {
   line-height: 1.6;
 }
-
 /*# sourceMappingURL=style.css.map */
